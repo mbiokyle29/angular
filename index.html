@@ -1,42 +1,43 @@
 <!-- index.html -->
-	<!DOCTYPE html>
-	<html ng-app="labApp">
+<!DOCTYPE html>
+<html ng-app="labApp">
 	<head>
-	  <!-- SCROLLS -->
-	  <!-- load bootstrap and fontawesome via CDN -->
-	  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
-	  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
+		<meta charset="utf-8">
 
-	  <!-- SPELLS -->
-	  <!-- load angular via CDN -->
-	  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js"></script>
-	  <script src="script.js"></script>
+		<!-- load bootstrap and fontawesome via CDN -->
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
+		<link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="public/style.css" type="text/css">
+		
+		<!-- load angular via CDN -->
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.18/angular-route.min.js"></script>
+		<script src="script.js"></script>
 	</head>
 	<body ng-controller="mainController">
-
 		<!-- HEADER AND NAVBAR -->
 		<header>
-			<nav class="navbar navbar-default">
+			<nav class="navbar navbar-default navbar-fixed-top">
 			<div class="container">
 				<div class="navbar-header">
-					<a class="navbar-brand" href="/">Johannsen Lab</a>
+					<span class="navbar-brand">Johannsen Lab</span>
 				</div>
-
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#"><i class="fa fa-home"></i> Home</a></li>
-					<li><a href="#about"><i class="fa fa-shield"></i> About</a></li>
-					<li><a href="#contact"><i class="fa fa-comment"></i> Contact</a></li>
+				<ul class="nav navbar-nav navbar-right h-buttons">
+					<li><a href="#" class="btn btn-default"><i class="fa fa-flask h-button"></i> Home</a></li>
+					<li><a href="#pubs" class="btn btn-default"><i class="fa fa-file-text-o h-button"></i> Publications</a></li>
+					<li><a href="#lab" class="btn btn-default"><i class="fa fa-users h-button"></i> Lab Members</a></li>
+					<li><a href="#bioinfo" class="btn btn-default"><i class="fa fa-terminal h-button"></i> Bioinformatics</a></li>
 				</ul>
 			</div>
 			</nav>
 		</header>
-
-		<!-- MAIN CONTENT AND INJECTED VIEWS -->
-		<div id="main">
-			{{ message }}
-			<!-- angular templating -->
-			<!-- this is where content will be injected -->
-
+		
+		<div class="panel panel-default">
+		  <div class="panel-body" style="padding-top: 100px;">
+				<div ng-view></div>
+		  </div>
 		</div>
+
 	</body>
-	</html>
+</html>
