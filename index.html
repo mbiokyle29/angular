@@ -14,27 +14,16 @@
 		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js"></script>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.18/angular-route.min.js"></script>
 		<script src="script.js"></script>
+
 	</head>
 	<body ng-controller="mainController">
-		<!-- HEADER AND NAVBAR -->
+		
 		<header>
-			<nav class="navbar navbar-default navbar-fixed-top">
-			<div class="container">
-				<div class="navbar-header">
-					<span class="navbar-brand">Johannsen Lab</span>
-				</div>
-				<ul class="nav navbar-nav navbar-right h-buttons">
-					<li><a href="#" class="btn btn-default"><i class="fa fa-flask h-button"></i> Home</a></li>
-					<li><a href="#pubs" class="btn btn-default"><i class="fa fa-file-text-o h-button"></i> Publications</a></li>
-					<li><a href="#lab" class="btn btn-default"><i class="fa fa-users h-button"></i> Lab Members</a></li>
-					<li><a href="#bioinfo" class="btn btn-default"><i class="fa fa-terminal h-button"></i> Bioinformatics</a></li>
-				</ul>
-			</div>
-			</nav>
+
 		</header>
 		
-		<div class="panel panel-default">
-		  <div class="panel-body" style="padding-top: 100px;">
+		<div>
+		  <div>
 				<div ng-view></div>
 		  </div>
 		</div>

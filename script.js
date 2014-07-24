@@ -30,20 +30,20 @@ labApp.config(function($routeProvider, $locationProvider) {
 				controller  : 'bioinfoController'
 			});
 });
+
 // create the controller and inject Angular's $scope
 labApp.controller('mainController', function($scope) {
-	// create a message to display in our view
-	$scope.message = 'Everyone come and see how good I look!';
+
 });
 
 labApp.controller('publicationsController', function($scope) {
-	$scope.message = 'Look! Publications';
+
 });
 
 labApp.controller('labController', function($scope) {
-	$scope.message = 'Look! Lab';
+
 });
 
 labApp.controller('bioinfoController', function($scope) {
-	$scope.message = 'Look! Codes';
+
 });
