@@ -47,3 +47,4 @@ labApp.controller('labController', function($scope) {
 labApp.controller('bioinfoController', function($scope) {
 
 });
+

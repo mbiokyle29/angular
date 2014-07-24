@@ -1,0 +1,44 @@
+.navbar {
+	background-color: #1ABC9C;
+}
+
+body { padding-top: 80px; }
+
+#brand {
+	margin-left: 20px;
+	margin-right: 0px;
+	font-family: 'Ubuntu Condensed', sans-serif;
+	display: inline-block;
+	color: black;
+}
+
+#links {
+	display: inline-block;
+}
+
+#links * {
+	display: inline-block;
+}
+
+.nav-items {
+	margin-right: 20px;
+}
+
+a {
+	font-family: 'Ubuntu Condensed', sans-serif;
+	text-decoration: none;
+	color: black;
+}
+
+#links i {
+	margin-right: 5px;
+}
+
+#hamburger {
+	margin-right: 15px;
+	margin-bottom: auto;	
+}
+
+ul{
+	list-style-type: none;
+}
