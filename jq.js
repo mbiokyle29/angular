@@ -1,14 +1,13 @@
 $(document).ready(function() {
-    // Optimalisation: Store the references outside the event handler:
     var $window = $(window);
 
     function checkWidth() {
         var windowsize = $window.width();
-        if (windowsize < 960) {
-        	$('#links').css('display','none');
+        if (windowsize < 783) {
+        	$('.link').css('display','none');
         	$('#hamburger').css('display', 'inline');
-        } else if (windowsize >= 960) {
-        	$('#links').css('display','inline-block');
+        } else if (windowsize >= 783) {
+        	$('.link').css('display','inline');
         	$('#hamburger').css('display', 'none');
         }
     }
@@ -17,5 +16,5 @@ $(document).ready(function() {
     checkWidth();
     
     // Bind event listener
-    $(window).resize(checkWidth);
+    $window.resize(checkWidth);
 });
