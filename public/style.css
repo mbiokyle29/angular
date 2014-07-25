@@ -41,3 +41,20 @@ a {
 ul {
 	list-style: none;
 }
+
+.citation {
+	color: #5B626E;
+	font-size: 16px;
+}
+
+.list i {
+	color: rgb(42, 100, 150);
+}
+
+.list i:hover {
+	border-color: #5B626E;
+}
+
+.specs {
+	padding-left: 10px;
+}
