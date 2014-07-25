@@ -3,10 +3,10 @@ $(document).ready(function() {
 
     function checkWidth() {
         var windowsize = $window.width();
-        if (windowsize < 783) {
+        if (windowsize < 900) {
         	$('.link').css('display','none');
             $('.small-nav').css('display', 'inline');
-        } else if (windowsize >= 783) {
+        } else if (windowsize >= 900) {
         	$('.link').css('display','inline');
             $('.small-nav').css('display', 'none');
         }
