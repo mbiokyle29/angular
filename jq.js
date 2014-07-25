@@ -5,10 +5,10 @@ $(document).ready(function() {
         var windowsize = $window.width();
         if (windowsize < 783) {
         	$('.link').css('display','none');
-        	$('#hamburger').css('display', 'inline');
+            $('.small-nav').css('display', 'inline');
         } else if (windowsize >= 783) {
         	$('.link').css('display','inline');
-        	$('#hamburger').css('display', 'none');
+            $('.small-nav').css('display', 'none');
         }
     }
 
