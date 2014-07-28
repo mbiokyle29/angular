@@ -1,19 +1,46 @@
 <div class="container"> 
 	<h3>Bioinformatics</h3>
-	<div class="col-md-6 comp">
+	<div class="col-md-6" style="width: 100%;">
 		<h3><i class="fa fa-file-code-o"/> Projects</h3>
 		<ul class="repos">
-			<li><h4>Easy-Variant</h4>
+			<li>
+				<a href="https://github.com/mbiokyle29/MosaicsPerl"><h3>MosaicsPerl</h3></a>
+				<p>
+					A perl wrapper for the <a href="http://www.stat.wisc.edu/~keles/Software/mosaics/index.html">MOSAiCS CHIP-SEQ R package</a><br>
+					Makes a default analysis simple, while also supporting all of the non-default options. Uses the <a href="https://github.com/bricas/statistics-r">Statistics::R</a> perl module.<br><br>
+					MOSAiCS: Chung D, Kuan PF and Keles S (2012). mosaics: MOSAiCS (MOdel-based one and two Sample Analysis and Inference for ChIP-Seq). R package version 1.12.0
+				</p>
+				<gist id="b8bb6bd4c9478ee3ff7f"></gist>
+			</li>
+			<li>
+				<a href="https://github.com/mbiokyle29/easy-variant"><h3>Easy-Variant</h3></a>
 				<p>
 					A simplified variant/SNP caller implemented in Perl, using Moose Object library.<br>
 					Calls SNPs and Indels, can be configured with a variety of options<br>
-					Such as setting a minimum depth, or ignoring certain ranges of the genome<br>
+					such as setting a minimum depth, or ignoring certain ranges of the genome.<br>
 					The genome package stores all sequence information in MySQL.<br>
 				</p>
+				<gist id="9a1b60e209bb088440a1"></gist>
+			</li>
+			<li>
+				<a href="https://github.com/mbiokyle29/perlpipe"><h3>perlpipe</h3></a>
+				<p>
+					A collection of various scripts and pipelines. The perl directory contains a large majority of the useful stuff.<br>
+					There are pipelines scripts for bowtie2 alignment with samtools rocksort, and a MOSAiCS pipelines which uses the MosaicsPerl.pm module.<br>
+				</p>
+				<gist id="6ed8ae1d57d8d10ad1f2"></gist>
+			</li>
+			<li>
+				<h3>Miscellaneous</h3>
+				<ul>
+					<li><a href="https://github.com/mbiokyle29/Binder">Binder.pm</a> - DBI like parameter binding for normal strings</li>
+					<li><a href="https://github.com/mbiokyle29/sysadmin">Sysadmin Scripts</a> - Some system admin scripts, SSH alerts, path cleaning</li>
+					<li><a href="https://github.com/mbiokyle29/angular">Lab Page</a> - Angular code for this page</li>
+				</ul>
 			</li>
 		<ul>
 	</div>
-	<div class="col-md-6 info">
+	<div class="col-md-6">
 		<h3><i class="fa fa-desktop"/> Workstation</h3>
 		<ul class="specs">
 			<li><i class="fa fa-gear"/>Dell Precision T7600</li>

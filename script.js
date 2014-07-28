@@ -1,6 +1,6 @@
 // script.js
 // create the module and name it labApp
-var labApp = angular.module('labApp', ['ngRoute', 'angular-gist.min.js']);
+var labApp = angular.module('labApp', ['ngRoute', 'gist']);
 
 // configure our routes
 labApp.config(function($routeProvider, $locationProvider) {
