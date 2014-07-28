@@ -1,9 +1,13 @@
+body { 
+	padding-top: 70px; 
+	padding-bottom: 90px;
+	background-color: #FAFFFE;
+}
+
 .navbar {
 	background-color: #1ABC9C;
 	min-height: 50px;
 }
-
-body { padding-top: 70px; padding-bottom: 90px;}
 
 #jlab {
 	font-family: 'Ubuntu Condensed', sans-serif;
