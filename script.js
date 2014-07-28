@@ -1,6 +1,6 @@
 // script.js
 // create the module and name it labApp
-var labApp = angular.module('labApp', ['ngRoute']);
+var labApp = angular.module('labApp', ['ngRoute', 'angular-gist.min.js']);
 
 // configure our routes
 labApp.config(function($routeProvider, $locationProvider) {
@@ -47,4 +47,3 @@ labApp.controller('labController', function($scope) {
 labApp.controller('bioinfoController', function($scope) {
 
 });
-
