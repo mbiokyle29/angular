@@ -30,7 +30,6 @@ a {
 }
 
 .fa {
-	vertical-align: middle;
 	padding-right: 5px;
 }
 
@@ -57,4 +56,21 @@ ul {
 
 .specs {
 	padding-left: 10px;
+}
+
+.small-nav a {
+	height: 60px;
+}
+
+.small-nav i {
+	margin-top: 11px;
+}
+
+.small-nav span {
+	position: static;
+	margin-top: 20px;
+}
+
+.small-nav > .btn-group {
+	position: relative;
 }
