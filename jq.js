@@ -1,6 +1,7 @@
 $(document).ready(function() {
-    var $window = $(window);
 
+    // Width stuff
+    var $window = $(window);
     function checkWidth() {
         var windowsize = $window.width();
         if (windowsize < 1000) {
@@ -11,10 +12,8 @@ $(document).ready(function() {
             $('.small-nav').css('display', 'none');
         }
     }
-
     // Execute on load
-    checkWidth();
-    
+    checkWidth();   
     // Bind event listener
     $window.resize(checkWidth);
 });
