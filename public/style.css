@@ -1,6 +1,6 @@
 body { 
 	padding-top: 70px; 
-	padding-bottom: 90px;
+	padding-bottom: 125px;
 	background-color: #FAFFFE;
 }
 
@@ -84,14 +84,14 @@ ul {
 	width: 100%;
 }
 
-#9a1b60e209bb088440a1 {
-	overflow: auto;
+.blue-accent {
+	color: #2a6496;
 }
 
-#b8bb6bd4c9478ee3ff7f {
-	overflow: auto;
+.green-accent {
+	color: #1ABC9C;
 }
 
-#6ed8ae1d57d8d10ad1f2 {
-	overflow: auto;
+.text-emph {
+	font-size: 16px;
 }
