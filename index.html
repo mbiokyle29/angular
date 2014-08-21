@@ -1,0 +1,88 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html ng-app="labApp">
+	<head>
+		<meta charset="utf-8">
+
+		<!-- load bootstrap and fontawesome via CDN -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
+		<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Ubuntu+Condensed'>
+		<link rel="stylesheet" href="public/style.css" />
+		<link rel="stylesheet" href="public/vex.css" />
+    	<link rel="stylesheet" href="public/vex-theme-os.css" />
+		
+		<!-- so much javascript -->
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<script src="js/underscore-min.js"></script>
+		<script src="js/jquery-migrate-1.2.1.min.js"></script>
+		<script src="js/angular.min.js"></script>
+		<script src="js/angular-route.min.js"></script>
+		<script src="js/angular-gist.min.js"></script>
+		<script src="js/d3.min.js"></script>
+		<script src="js/vex.combined.min.js"></script>
+		<script src="js/script.js"></script>
+		<script src="js/jq.js"></script>
+		
+		<!-- No Zoom -->
+		<meta content='True' name='HandheldFriendly' />
+		<meta content='width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;' name='viewport' />
+		<meta name="viewport" content="width=device-width" />
+
+	</head>
+	<body ng-controller="mainController">	
+		
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  			<div class="container">
+  				<p class="navbar-btn navbar-left" id="jlab">Johannsen Lab</p>
+  				<div class="navbar-right">
+  					<a class="navbar-btn link" href="#"><i class="fa fa-home fa-lg"></i><span class="text">Home</span></a>
+  					<a class="navbar-btn link" href="#pubs"><i class="fa fa-file-text-o fa-lg"></i><span class="text">Publications</span></a>
+  					<a class="navbar-btn link" href="#lab"><i class="fa fa-users fa-lg"></i><span class="text">Lab</span></a>
+  					<a class="navbar-btn link" href="#bioinfo"><i class="fa fa-terminal fa-lg"></i><span class="text">Bioinformatics</span></a>
+					<a class="navbar-btn link" href="http://www.wisc.edu"><i class="fa fa-university fa-lg"></i><span class="text">UW - Madison</span></a>
+  				</div>
+  			</div>
+		</nav>
+		
+		<div class="container main">
+			<div ng-view></div>
+			<div class="footer navbar-fixed-bottom">
+				<div class="container" style="padding-top: 5px; width: 100%;">
+					<div class="small-nav">
+						<div class="btn-group btn-group-justified">
+							<div class="btn-group">
+		  						<a type="button" class="btn btn-default btn-lg" href="#">
+		  							<i class="fa fa-home fa-lg"></i><span class="hidden-xs">Home</span>
+		  						</a>
+		  					</div>
+							<div class="btn-group">
+								<a type="button" class="btn btn-default btn-lg" href="#pubs">
+									<i class="fa fa-file-text-o fa-lg"></i><span class="hidden-xs">Publications</span>
+								</a>
+							</div>
+							<div class="btn-group">
+								<a type="button" class="btn btn-default btn-lg" href="#lab">
+									<i class="fa fa-users fa-lg"></i><span class="hidden-xs">Lab</span>
+								</a>
+							</div>
+							<div class="btn-group">
+								<a type="button" class="btn btn-default btn-lg" href="#bioinfo">
+									<i class="fa fa-terminal fa-lg"></i><span class="hidden-xs" style="padding-right: 5px;">Bioinformatics</span>
+								</a>
+							</div>
+							<div class="btn-group">
+								<a type="button" class="btn btn-default btn-lg" href="http://www.wisc.edu">
+									<i class="fa fa-university fa-lg"></i><span class="hidden-xs">UW - Madison</span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="container">
+        				<p class="text-muted text-center"> Copyright 2014 Board of Regents of the University of Wisconsin System</p>
+    				</div>
+    			</div>
+			</div>
+		</div>
+	</body>
+</html>

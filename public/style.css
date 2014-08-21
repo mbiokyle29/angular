@@ -1,0 +1,154 @@
+body { 
+	padding-top: 70px; 
+	padding-bottom: 125px;
+	background-color: #FAFFFF;
+}
+
+.navbar {
+	background-color: #1ABC9C;
+	min-height: 50px;
+}
+
+#jlab {
+	font-family: 'Ubuntu Condensed', sans-serif;
+	color: black;
+	font-size: 30px;
+	display: inline;
+}
+
+a {
+	font-family: 'Ubuntu Condensed', sans-serif;
+	text-decoration: none;
+	color: black;
+}
+
+.link {
+	line-height: 50px;
+}
+
+.footer {
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+	background-color: rgb(245, 245, 245);
+}
+
+.fa {
+	padding-right: 5px;
+}
+
+.text {
+	padding-right: 15px;
+}
+
+ul {
+	list-style: none;
+}
+
+.citation {
+	color: #5B626E;
+	font-size: 16px;
+}
+
+.list i {
+	color: rgb(42, 100, 150);
+}
+
+.list i:hover {
+	border-color: #5B626E;
+}
+
+.specs {
+	padding-left: 10px;
+}
+
+.small-nav {
+	width: 100%;
+}
+
+.small-nav a {
+	height: 60px;
+}
+
+.small-nav i {
+	margin-top: 11px;
+}
+
+.small-nav span {
+	position: static;
+	margin-top: 20px;
+}
+
+.small-nav > .btn-group {
+	position: relative;
+	width: 100%;
+}
+
+.blue-accent {
+	color: #2a6496;
+}
+
+.green-accent {
+	color: #1ABC9C;
+}
+
+.text-emph {
+	font-size: 16px;
+}
+
+.nav, .pagination, .carousel, .panel-title a { 
+	cursor: pointer; 
+}
+
+.exon {
+	fill: blue;
+}
+.intron {
+	fill: Cyan;
+}
+._3UTR {
+	fill: #FF8D8D;
+}
+._5UTR {
+	fill: #F2B134;
+}
+.start_codon {
+	fill: green;
+	stroke: green;
+	stroke-width: 3px;
+}
+.stop_codon {
+	fill: red;
+	stroke: red;
+	stroke-width: 3px;
+}
+
+.start_codon_leg {
+	fill: green;
+}
+
+.stop_codon_leg {
+	fill: red;
+}
+
+.CDS {
+	fill: #4FB99F;
+}
+
+line {
+	stroke: black;
+	stroke-width: 1;
+}
+
+.grid .tick {
+	stroke: lightgrey;
+	opacity: 0.7;
+}
+.grid path {
+	stroke-width: 0;
+}
+
+.well {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}

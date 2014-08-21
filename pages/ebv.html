@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="utf-8">
+  <head>
+    
+    <script type="text/javascript" src="d3.min.js"></script>
+    <script type="text/javascript" src="underscore-min.js"></script>
+    <script src="jquery-1.11.1.min.js"></script>
+    <script src="jquery-migrate-1.2.1.min.js"></script>
+    <script src="vex.combined.min.js"></script>
+    <script>vex.defaultOptions.className = 'vex-theme-os';</script>
+    <link rel="stylesheet" href="vex.css" />
+    <link rel="stylesheet" href="vex-theme-os.css" />
+
+    <style>
+      .exon {
+        fill: blue;
+      }
+      .intron {
+        fill: Cyan;
+      }
+      ._3UTR {
+        fill: #FF8D8D;
+      }
+      ._5UTR {
+        fill: #F2B134;
+      }
+      .start_codon {
+        fill: green;
+        stroke: green;
+        stroke-width: 3px;
+      }
+      .stop_codon {
+        fill: red;
+        stroke: red;
+        stroke-width: 3px;
+      }
+      .CDS {
+        fill: #4FB99F;
+      }
+      line {
+        stroke: black;
+        stroke-width: 1;
+      }
+      
+      .grid .tick {
+        stroke: lightgrey;
+        opacity: 0.7;
+      }
+      .grid path {
+        stroke-width: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container" style="overflow-x: scroll;"></div>
+    <script src="map.js"></script>
+  </body>
+</html>
+
