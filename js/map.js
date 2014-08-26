@@ -239,7 +239,7 @@ function generateContent(gene, ncbiNumber)
 
   // Search Link
   content = '<h2>' + gene[0].gene + " - ";
-  content += "<a href='http://www.ncbi.nlm.nih.gov/gene/?term=EBV+"+gene[0].gene+"'";
+  content += "<a class='blue-accent' href='http://www.ncbi.nlm.nih.gov/gene/?term=EBV+"+gene[0].gene+"'";
   content += ">NCBI Gene</a><span>  |  </span>";
 
   
@@ -249,7 +249,7 @@ function generateContent(gene, ncbiNumber)
 
   var fastaUrl = "http://www.ncbi.nlm.nih.gov/nuccore/"+ncbiNumber+"?report=fasta&from="+start+"&to="+end;
   
-  content += "<a href='"+fastaUrl+"'>  FASTA </a></h2>";
+  content += "<a class='blue-accent' href='"+fastaUrl+"'>  FASTA </a></h2>";
 
   content += '<ul>';
   sortedGene.forEach(function(feature) {
