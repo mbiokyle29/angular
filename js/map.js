@@ -74,6 +74,7 @@ d3.tsv("public/EBV-B958_version1_0.gtf.txt", function(data) {
     .enter()
     .append("g")
       .attr("id", function(d) { return d[0].gene; })
+      .style("cursor", "pointer")
       .on("click", function(d) {
         vex.open({
           content: generateContent(d, ncbi),
@@ -101,7 +102,8 @@ d3.tsv("public/EBV-B958_version1_0.gtf.txt", function(data) {
       } else {
         bottomFrame === 2 ? bottomFrame = 0 : ++bottomFrame;
       }
-    });
+    })
+    .append("svg:title").text(function(d) { return d[0].gene; });
 
   svgContainer.append("g")
     .attr("class", "x axis")
@@ -118,7 +120,9 @@ d3.tsv("public/EBV-B958_version1_0.gtf.txt", function(data) {
 
 var svgContainer = d3.select(".legend").append("svg")
     .attr("width", "100%")
-    .attr("height", 50);
+    .attr("height", 15)
+    .style("margin-top", "5px");
+
 var types =  ['exon', 'intron', '_3UTR', '_5UTR', 'CDS','start_codon_leg', 'stop_codon_leg'];
 var legend = svgContainer.append("g");
 

@@ -1,13 +1,13 @@
 <script src="js/map.js"></script>
-<div class="container"> 
+<div class="container bioinformatics"> 
 	<div class="col-md-6" style="width: 100%;">
-		<h3><i class="fa fa-file-code-o green-accent"/>Bioinformatics Projects</h3>
+		<h2 class="title">Bioinformatics Projects</h3>
 		<ul class="repos">
 			<li>
 				<a href="https://github.com/mbiokyle29/MosaicsPerl"><h3>MosaicsPerl</h3></a>
 				<p>
 					A perl wrapper for the <a href="http://www.stat.wisc.edu/~keles/Software/mosaics/index.html" class="blue-accent">MOSAiCS CHIP-SEQ R package</a>.
-					Makes a default analysis simple, while also supporting all of the non-default options. Uses the <a href="https://github.com/bricas/statistics-r" class="blue-accent">Statistics::R</a> perl module.<br>
+					Makes a default analysis simple, while also supporting all of the non-default options. Uses the <a href="https://github.com/bricas/statistics-r" class="blue-accent">Statistics::R</a> perl module.
 					MOSAiCS: Chung D, Kuan PF and Keles S (2012). mosaics: MOSAiCS (MOdel-based one and two Sample Analysis and Inference for ChIP-Seq). R package version 1.12.0
 				</p>
 				<gist id="b8bb6bd4c9478ee3ff7f"></gist>
@@ -15,17 +15,17 @@
 			<li>
 				<a href="https://github.com/mbiokyle29/easy-variant" ><h3>Easy-Variant</h3></a>
 				<p>
-					A simplified variant/SNP caller implemented in Perl, using Moose Object library.<br>
-					Calls SNPs and Indels, can be configured with a variety of options<br>
-					such as setting a minimum depth, or ignoring certain ranges of the genome.<br>
-					The genome package stores all sequence information in MySQL.<br>
+					A simplified variant/SNP caller implemented in Perl, using Moose Object library.
+					Calls SNPs and Indels, can be configured with a variety of options
+					such as setting a minimum depth, or ignoring certain ranges of the genome.
+					The genome package stores all sequence information in MySQL.
 				</p>
 				<gist id="9a1b60e209bb088440a1"></gist>
 			</li>
 			<li>
 				<a href="https://github.com/mbiokyle29/perlpipe"><h3>perlpipe</h3></a>
 				<p>
-					A collection of various scripts and pipelines. The perl directory contains a large majority of the useful stuff.<br>
+					A collection of various scripts and pipelines. The perl directory contains a large majority of the useful stuff.
 					There are pipelines scripts for bowtie2 alignment with samtools rocksort, and a MOSAiCS pipelines which uses the MosaicsPerl.pm module.<br>
 				</p>
 				<gist id="6ed8ae1d57d8d10ad1f2"></gist>
@@ -37,12 +37,14 @@
 		<ul>
 	</div>
 	<div class="col-md-6" style="width: 100%;">
-		<h3><i class="fa fa-exchange green-accent"/>EBV Transcript Map</h3>
-		<div class="map-container" style="overflow-x: auto;"></div>
-		<div class="legend"></div>
+		<h2 class="title">Interactive EBV Transcript Map</h3>
+		<div class="well d3well">
+			<div class="map-container" style="overflow-x: auto;"></div>
+			<div class="legend"></div>
+		</div>
 	</div>
-	<div class="col-md-6">
-		<h3><i class="fa fa-desktop green-accent"/>Bioinformatics Workstation</h3>
+	<div class="col-md-8">
+		<h2 class="title">Bioinformatics Workstation</h3>
 		<ul class="specs">
 			<li><i class="fa fa-gear"/>Dell Precision T7600</li>
 			<li><i class="fa fa-gear"/>Debain Wheezy</li>

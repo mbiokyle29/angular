@@ -1,5 +1,5 @@
 body { 
-	padding-top: 70px; 
+	padding-top: 80px; 
 	padding-bottom: 125px;
 	background-color: #FAFFFF;
 }
@@ -12,14 +12,25 @@ body {
 #jlab {
 	font-family: 'Ubuntu Condensed', sans-serif;
 	color: black;
-	font-size: 30px;
+	font-size: 40px;
 	display: inline;
+	margin: 0px;
+	line-height: 1;
+}
+
+.nav-div {
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 a {
 	font-family: 'Ubuntu Condensed', sans-serif;
 	text-decoration: none;
 	color: black;
+}
+
+.title {
+	font-family: 'Ubuntu Condensed', sans-serif;
 }
 
 .link {
@@ -82,6 +93,10 @@ ul {
 .small-nav > .btn-group {
 	position: relative;
 	width: 100%;
+}
+
+.bioinformatics {
+	font-size: 18px;
 }
 
 .blue-accent {
@@ -151,4 +166,20 @@ line {
 .well {
 	margin-top: 10px;
 	margin-bottom: 10px;
+}
+
+.proj-desc {
+	font-size: 18px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#center-img {
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+
+.header-text {
+	font-size: 18px;
 }

@@ -6,7 +6,7 @@
 
 		<!-- load bootstrap and fontawesome via CDN -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />
 		<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Ubuntu+Condensed'>
 		<link rel="stylesheet" href="public/style.css" />
 		<link rel="stylesheet" href="public/vex.css" />
@@ -33,14 +33,14 @@
 	<body ng-controller="mainController">	
 		
 		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-  			<div class="container">
-  				<p class="navbar-btn navbar-left" id="jlab">Johannsen Lab</p>
+  			<div class="container nav-div" style="position: relative;">
+  				<p class="navbar-left" id="jlab">Johannsen Lab</p>
   				<div class="navbar-right">
-  					<a class="navbar-btn link" href="#"><i class="fa fa-home fa-lg"></i><span class="text">Home</span></a>
-  					<a class="navbar-btn link" href="#pubs"><i class="fa fa-file-text-o fa-lg"></i><span class="text">Publications</span></a>
-  					<a class="navbar-btn link" href="#lab"><i class="fa fa-users fa-lg"></i><span class="text">Lab</span></a>
-  					<a class="navbar-btn link" href="#bioinfo"><i class="fa fa-terminal fa-lg"></i><span class="text">Bioinformatics</span></a>
-					<a class="navbar-btn link" href="http://www.wisc.edu"><i class="fa fa-university fa-lg"></i><span class="text">UW - Madison</span></a>
+  					<a class="link" href="#"><i class="fa fa-home fa-2x"></i><span class="text header-text">Home</span></a>
+  					<a class="link" href="#pubs"><i class="fa fa-file-text-o fa-2x"></i><span class="text header-text">Publications</span></a>
+  					<a class="link" href="#lab"><i class="fa fa-users fa-2x"></i><span class="text header-text">Lab</span></a>
+  					<a class="link" href="#bioinfo"><i class="fa fa-desktop fa-2x"></i><span class="text header-text">Bioinformatics</span></a>
+					<a class="link" href="http://www.wisc.edu"><i class="fa fa-university fa-2x"></i><span class="text header-text">UW - Madison</span></a>
   				</div>
   			</div>
 		</nav>
@@ -51,7 +51,7 @@
 					<div class="small-nav">
 						<div class="btn-group btn-group-justified">
 							<div class="btn-group">
-		  						<a type="button" class="btn btn-default btn-lg" href="#">
+		  						<a type="button" class="btn btn-default btn" href="#">
 		  							<i class="fa fa-home fa-lg"></i><span class="hidden-xs">Home</span>
 		  						</a>
 		  					</div>
@@ -67,7 +67,7 @@
 							</div>
 							<div class="btn-group">
 								<a type="button" class="btn btn-default btn-lg" href="#bioinfo">
-									<i class="fa fa-terminal fa-lg"></i><span class="hidden-xs" style="padding-right: 5px;">Bioinformatics</span>
+									<i class="fa fa-desktop fa-lg"></i><span class="hidden-xs" style="padding-right: 5px;">Bioinformatics</span>
 								</a>
 							</div>
 							<div class="btn-group">
