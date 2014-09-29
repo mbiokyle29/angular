@@ -183,3 +183,7 @@ line {
 .header-text {
 	font-size: 18px;
 }
+
+.style-list {
+	list-style: disc;
+}
