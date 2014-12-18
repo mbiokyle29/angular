@@ -187,3 +187,28 @@ line {
 .style-list {
 	list-style: disc;
 }
+
+.attention {
+	padding-top: 0px;
+	margin-top: 20px;
+}
+
+.top-box {
+	background-color: #BDBFBE;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 100%;
+}
+
+.res-desc {
+	margin-top: 20px;
+}
+
+.atten-head {
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+.req-list {
+	margin-bottom: 5px;
+}
